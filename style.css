@@ -105,7 +105,25 @@ header .heading_text small {
   text-shadow: 2px 1px 0px #000;
 
   margin-top: 3px;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+#offcanv_cont_body ul li button i,
+#dropdown_menu i {
+  margin-right: 11px;
+  width: 25px;
+  font-size: 25px;
+  color: cyan;
+}
+
+#offcanv_cont_body ul li button i:hover,
+#dropdown_menu i:hover {
+  color: rgb(75, 255, 84);
 }
 /* 
 #offcanv_cont_body ul li:hover {
@@ -124,6 +142,11 @@ header .heading_text small {
 
   padding-top: 0px;
   margin-top: 0px;
+}
+
+#dropdown_menu {
+  margin-bottom: 4px;
+  background-color: rgba(24, 25, 26, 0.932);
 }
 
 #offcanv_cont_body ul li button:hover {
@@ -183,6 +206,7 @@ main {
   background-color: rgba(38, 39, 41, 0.78);
   box-shadow: 0px 1px 6px #000;
   width: 100%;
+  min-height: 100vh;
   padding: 10px;
   display: flex;
   /* justify-content: center; */
@@ -215,13 +239,22 @@ main p {
 }
 
 .text_area button {
-  height: 2.7rem;
+  height: 2.9rem;
   border: none;
-  width: 2.7rem;
+  width: 2.99rem;
   margin-left: 3px;
   border-radius: 50%;
   background-color: transparent;
   box-shadow: 0px 1px 6px #000000;
+}
+
+.text_area button i {
+  color: cyan;
+  font-size: 25px;
+}
+
+.text_area button i:hover {
+  color: #fff;
 }
 
 .text_area textarea {
@@ -232,7 +265,7 @@ main p {
   line-clamp: 3;
 
   width: 95%;
-  height: 2.7rem;
+  height: 2.9rem;
   border: none;
   border-radius: 29px;
 
