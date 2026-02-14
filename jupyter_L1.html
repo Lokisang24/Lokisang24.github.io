@@ -1,0 +1,192 @@
+<!doctype html>
+<html data-bs-theme="dark">
+  <head>
+    <title>Jupyter-L1 : AI Model by Lantex</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="jupyter_L1.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+  </head>
+  <body>
+    <header class="navbar navbar-lg">
+      <div class="container-fluid">
+        <div class="heading_text">
+          <h1>Jupyter-L1</h1>
+          <small class="fw-lighter fs-5"
+            >Lantex vercel-AI sub model for text generation.</small
+          >
+        </div>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#menu"
+          id="menu_button"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="offcanvas offcanvas-end w-50 bg-dark"
+          tabindex="-1"
+          id="menu"
+        >
+          <!--contents of the offcanvas menu... -->
+          <div id="offcanv_cont_head" class="offcavas-header p-2">
+            <!-- offcanvas menu header -->
+            <h2 class="fw-lighter fs-2 p-2 offcanvas-title">Menu</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+            ></button>
+          </div>
+          <div class="offcanvas-body" id="offcanv_cont_body">
+            <!-- navbarnavigation... -->
+            <ul class="navbar-nav p-2 w-100">
+              <!--  -->
+              <li class="nav-item fs">
+                <button
+                  class="dropdown-toggler btn btn-secondary"
+                  data-bs-toggle="dropdown"
+                  data-bs-auto-close="inside"
+                >
+                  Models
+                </button>
+              </li>
+
+              <!--  -->
+              <li class="nav-item">
+                <button
+                  class="dropdown-toggler btn btn-secondary"
+                  data-bs-toggle="dropdown"
+                  data-bs-auto-close="inside"
+                  id="settings_btn"
+                >
+                  Language Settings
+                </button>
+              </li>
+              <hr class="dropdown-divider" />
+              <!--  -->
+              <li class="nav-item">
+                <button
+                  class="dropdown-toggler btn btn-secondary"
+                  data-bs-toggle="dropdown"
+                  data-bs-auto-close="inside"
+                  id="settings_btn"
+                >
+                  Features
+                </button>
+              </li>
+
+              <!--  -->
+              <li class="nav-item"></li>
+              <hr class="dropdown-divider" />
+              <!--  -->
+              <li class="nav-item">
+                <div class="dropdown dropdown-end">
+                  <!-- settings dropdown menu -->
+                  <button
+                    class="dropdown-toggler btn btn-secondary m-0"
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="inside"
+                    id="settings_btn"
+                  >
+                    Settings
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                      <a href="#">Lantex Software Dev</a>
+                    </li>
+                    <hr class="dropdown-divider" />
+                    <li class="dropdown-item">
+                      <a href="#"> Jupyter Config. </a>
+                    </li>
+                    <hr class="dropdown-divider" />
+
+                    <li class="dropdown-item"><a href="#">APIs</a></li>
+                    <hr class="dropdown-divider" />
+                    <li class="dropdown-item">
+                      <a href="#"> Jupyter Updates </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <hr class="dropdown-divider" />
+              <!--  -->
+              <li class="nav-item">
+                <button
+                  class="dropdown-toggler btn btn-secondary"
+                  data-bs-toggle="dropdown"
+                  data-bs-auto-close="inside"
+                  id="settings_btn"
+                >
+                  About Lantex
+                </button>
+              </li>
+              <hr class="dropdown-divider" />
+              <li class="nav-item">
+                <small class="fw-lighter"
+                  >Lantex corp@
+                  <br />
+                  Your Partner in the age of AI Lantex Brings convenience to
+                  your Home, Office, Room, and most importantly in your Life.
+                  <br />
+                  Makes you a better manager of your activities by bringing you
+                  a tech ally that can assist you in optimating every step you
+                  take.
+                  <br />
+                  <br />
+                  <ul id="contacts_list" class="list-group">
+                    <h2 class="fw-lighter fs-3">Contact us here :</h2>
+                    <li class="list-group-item">
+                      Eamil: <a href="#">Lantex_technologies@lantex.com</a>
+                    </li>
+                    <li class="list-group-item">
+                      Website : <a href="#">Lantextech.com</a>
+                    </li>
+                    <li class="list-group-item">Phones : +27 71 752 1363</li>
+                    <li class="list-group-item">
+                      Whatsapp Chanel:
+                      <a href="#"
+                        >https://whatsapp.com/channel/0029Vak8eDq9mrGeQDuzUr25</a
+                      >
+                    </li>
+                  </ul>
+                  <br />
+                  <br />
+                  Thank You For Visiting Our Services, Your Partner in the age
+                  of Tech Rev.
+                </small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--  the main body of the bot-->
+    <main>
+      <div id="chat_body">
+        <p id="bot_text" class="fw-lighter">
+          Hello There user, how may I help you today ?
+        </p>
+        <p id="user_text" class="fw-lighter">Hello There Bot, How are you ?</p>
+      </div>
+      <div class="text_area">
+        <textarea
+          id="text_input"
+          placeholder="enter text message..."
+        ></textarea>
+        <button type="button"></button>
+      </div>
+    </main>
+
+    <!--  -->
+    <script src="jupyter_L1.js">
+      // your script goes here
+    </script>
+    <script src="bootstrap.bundle.min.js"></script>
+  </body>
+</html>
